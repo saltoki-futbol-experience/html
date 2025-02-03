@@ -1,0 +1,304 @@
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.container{
+		max-width: 1140px;
+	}	
+}
+@media (min-width: 992px) and (max-width: 1139.98px) {
+	html{
+		font-size: 51%;
+	}
+}
+
+@media (max-width: 991px) {
+	html {
+	    font-size: 59%;
+	}
+	.menu_btn {
+	    align-items: center;
+	    margin-bottom: 0rem;
+	}
+	#menu {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: #005496;
+		z-index: -1;
+		top: 0;
+		left: -100%;
+		-webkit-transition: .3s;
+		-o-transition: .3s;
+		transition: .3s;
+		text-align: center;
+		flex-direction: column;
+		padding-top: 21rem;
+		justify-content: flex-start;
+	}
+
+	#menu.current {
+		left: 0;
+	}
+	#menu li a{
+		display: inline-block;
+		font-size: 2.4rem;
+	}
+	.hamburger-menu {
+		display: block;
+		margin-left: 2.5rem;
+	}
+	.logo{
+		width: 14rem;
+	}
+	.logo img {
+	    top: -4.1rem;
+	    width: 14rem;
+	}
+	header.sticky .logo{
+	    width: 14rem;
+	}
+	header.sticky .logo img{
+		width: 14rem;
+	}
+
+
+
+	/*================= form area =========================*/
+	.form_heading {
+	    background-color: #005496;
+	    padding: 2.6rem 0rem 2.2rem;
+	}
+	.input_box_wrap {
+	    padding: 2rem 0rem 6rem;
+	}
+	.assistant_input_wrap {
+	    padding: 2rem 0rem 4rem;
+	}
+	.assistant_input_box_wrap {
+	    flex-direction: column;
+	    align-items: flex-start;
+	    margin-top: 3.5rem;
+	}
+	.assistant_input_box_wrap .assistant_main_label {
+	    margin-right: 0;
+	    padding-bottom: 1rem;
+	}
+	.assistant_input_box{
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.assistant_input_box label{
+		margin-right: 0;
+		padding-bottom: .5rem;
+	}
+	.assistant_input_box input{
+		width: 100%;
+	}
+	.assistant_input_box1 {
+	    margin-left: 0;
+	    margin-top: 1.7rem;
+	    width: 100%;
+	}
+
+
+	/*=================== footer area ========================*/
+	a.footer_logo {
+	    width: 100%;
+	    display: inline-block;
+	    text-align: center;
+	    padding-bottom: 4rem;
+	}
+	.footer_link {
+	    gap: 2.6rem;
+	    flex-direction: column;
+	    align-items: center;
+	}
+	.footer_bottom_link {
+	    justify-content: center;
+	    padding-bottom: 3rem;
+	}
+	.footer_copy {
+	    text-align: center;
+	}
+
+
+
+
+
+
+	/*=============== salkoti page area start ================*/
+	.saltoki_hero_content h2{
+		text-align: center;
+	}
+	.salkoti_hero_img{
+		text-align: center;
+		padding-top: 3.5rem;
+	}
+	.alta_clident_wrapper::before{
+		width: 100%;
+	}
+	.alta_client_content {
+	    text-align: center;
+	}
+	.alta_client_content h2{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.alta_client_content p{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.alta_client_box_wrap{
+		justify-content: center;
+	}
+	.alta_client_img{
+		margin-top: 4rem;
+		display: inline-block;
+		width: 100%;
+	}
+
+
+
+
+	
+}
+
+/*Medium devices (tablets, 767px and down)*/
+@media (max-width: 767px) {
+	html {
+	    font-size: 43%;
+	}
+}
+
+/*Small devices (landscape phones, 575px and down)*/
+@media (max-width: 575px) {
+	html{
+		font-size: 2vw;
+	}
+	.menu_btn a span{
+		white-space: nowrap;
+	}
+	.hero_wrapper {
+	    padding-top: 12.2rem;
+	    padding-bottom: 11.1rem;
+	}
+	.hero_content h2 {
+	    font-size: 4rem;
+	    line-height: 1.18;
+	}
+	.input_box {
+	    flex-direction: column;
+	    margin-top: 2.1rem;
+	    align-items: flex-start;
+	}
+	.futbol_form_wrapper {
+	    margin-top: 6rem;
+	}
+	.select_main_label, 
+	.check_main_label label, 
+	.input_box label{
+		padding-bottom: .4rem;
+	}
+	.check_main_label label{
+		min-width: 10rem;
+	}
+	.input_box input {
+	    height: 4.5rem;
+	}
+	.select_box .nice-select{
+		height: 4.5rem;
+		line-height: 4.5rem;
+	}
+	.select_box .nice-select::after{
+		top: 60%;
+	}
+	.assistant_input_box input{
+		height: 4.5rem;
+	}
+	.select_box_wrap{
+		flex-direction: column;
+	}
+	.select_box_wrap1 .select_main_label {
+	    display: none;
+	}
+	.select_box{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.select_box .select_label{
+		padding-bottom: .5rem;
+	}
+	.form_btn {
+	    margin-top: 4.8rem;
+	    margin-bottom: 5.3rem;
+	}
+	.form_btn button{
+		width: 27rem;
+	}
+	.img_logo1 {
+	    width: 16.3rem;
+	}
+	.footer_bottom_link li a {
+	    font-size: 1.4rem;
+	}
+	.check_main_label1{
+		min-width: 10rem;
+	}
+
+
+
+	/*=============== salkoti page area	==================*/
+	.saltoki_hero_wrapper {
+	    padding-top: 7.7rem;
+	    padding-bottom: 5.6rem;
+	}
+	.saltoki_hero_content h2 {
+	    font-size: 6rem;
+	}
+	.salkoti_hero_img img {
+	    width: 30.5rem;
+	}
+	.alta_clident_wrapper {
+	    padding: 7rem 0 6.7rem;
+	}
+	.saltoki_form_wrapper {
+	    padding-top: 6.3rem;
+	}
+	.salkoti_form_heading {
+	    padding-bottom: 0.6rem;
+	}
+	.salkoti_form_heading h2 {
+	    padding-left: 0;
+    }
+	.saltoki_form {
+	    padding-top: 1rem;
+	}
+	.saltoki_form .select_box_wrap {
+	    align-items: flex-start;
+	}
+	.saltoki_form .input_box {
+	    margin-top: 2.3rem;
+	}
+	.saltoki_form .check_main_label {
+	    min-width: 11rem;
+	    margin-right: 3.7rem;
+	}
+	.saltoki_form .check_box_wrap {
+	    margin-top: 2.3rem;
+	}
+	.saltoki_form .check_box_wrap {
+	    margin-bottom: 1.5rem;
+	}
+	.saltoki_form .form_btn {
+	    margin-top: 4.9rem;
+	    margin-bottom: 5.8rem;
+	}
+	.saltoki_form .form_btn button{
+		width: 27rem;
+	}
+	.saltoki_hero_content_img img {
+	    max-width: 43.4rem;
+	}
+}
+
+
