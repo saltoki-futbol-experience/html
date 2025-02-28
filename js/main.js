@@ -1,14 +1,14 @@
 (function ($) {
     "use strict";
 
-    $(window).on('load', function(){
+    $(window).on('load', function () {
         //===== Prealoder
         $("#preloader").delay(200).fadeOut("");
     });
 
     $(document).ready(function () {
         //05. sticky header
-        function sticky_header(){
+        function sticky_header() {
             var wind = $(window);
             var sticky = $('header');
             wind.on('scroll', function () {
@@ -62,20 +62,51 @@
                 iframe: {
                     patterns: {
                         youtube: {
-                          index: 'youtube.com/', 
+                            index: 'youtube.com/',
 
-                          id: 'v=',
-                          src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+                            id: 'v=',
+                            src: 'https://www.youtube.com/embed/%id%?autoplay=1'
                         },
                     },
 
-                  srcAction: 'iframe_src',
+                    srcAction: 'iframe_src',
                 }
             });
         }
         videoPopupInit();
 
 
+        // marquee js
+        $('.marquee').marquee({
+            duration: 20000,
+            duplicated: true,
+            pauseOnHover: false,
+            gap: 0,
+            startVisible: true,
+            delayBeforeStart: 0,
+        });
+
+
+        // overons_slider
+        $('.sponsor_slider').owlCarousel({
+            loop: true,
+            margin: 15,
+            autoplay: false,
+            nav: true,
+            dots: true,
+            navText: [
+                '<img src="./img/long_arow_left.svg" class="custom_prev" alt="arrow">',
+                '<img src="./img/long_arow_right.svg" class="custom_next" alt="arrow">'
+            ],
+            responsive: {
+                0: { items: 1 },
+                576: { items: 2 },
+                768: { items: 3 },
+                992: { items: 4 },
+                1200: { items: 4 },
+                1400: { items: 5 }
+            }
+        });
 
     });
 
